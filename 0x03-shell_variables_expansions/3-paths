@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s\n" ${PATH//:/$'\n'} | grep -c .
+echo $PATH | grep -o ':' | wc -l
